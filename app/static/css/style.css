@@ -1,0 +1,101 @@
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #f5f6fa;
+  --accent-color: #2ecc71;
+  --danger-color: #e74c3c;
+  --dark-color: #2c3e50;
+}
+
+body {
+  background-color: var(--secondary-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-bottom: 2rem;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.matrix-container {
+  display: inline-block;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.matrix-row {
+    display: flex;
+    justify-content: center;
+}
+
+.matrix-cell {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--primary-color);
+  margin: 3px;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.matrix-cell:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn-secondary {
+  background-color: var(--dark-color);
+  border: none;
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+  border: none;
+}
+
+.result-container {
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  min-height: 120px;
+  word-break: break-all;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.error-message {
+    color: #dc3545;
+    margin-top: 0.5rem;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  border-radius: 6px;
+  padding: 0.75rem;
+  border: 2px solid #e9ecef;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: none;
+} 
